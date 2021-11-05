@@ -38,8 +38,8 @@ public class NotificationHelper extends ContextWrapper {
     public NotificationCompat.Builder getChannelNotification() {
         return new
                 NotificationCompat.Builder(getApplicationContext(), channelID)
-                .setContentTitle("Alarm!")
-                .setContentText("Bangun Woi ")
+                .setContentTitle("VAlarm!")
+                .setContentText("Ini adalah pengingat alarm anda")
                 .setSmallIcon(R.drawable.ic_android);
     }
 }

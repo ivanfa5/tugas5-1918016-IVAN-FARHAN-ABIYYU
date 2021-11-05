@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity implements TimePickerDialog.
     }
 
     private void updateTimeText(Calendar c){
-        String timeText = "Alarm set for: ";
+        String timeText = "Alarm Aktif : ";
         timeText += DateFormat.getTimeInstance(DateFormat.SHORT).format(c.getTime());
         mTextView.setText(timeText);
     }
@@ -75,6 +75,6 @@ public class MainActivity extends AppCompatActivity implements TimePickerDialog.
         PendingIntent pendingIntent =
                 PendingIntent.getBroadcast(this,1,intent,0);
         alarmManager.cancel(pendingIntent);
-        mTextView.setText("Alarm Canceled");
+        mTextView.setText("Alarm Dibatalkan");
     }
 }
